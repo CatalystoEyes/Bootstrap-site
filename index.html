@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-none"> 
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-none" data-bs-theme="dark"> 
             <div class="container">
               <a href="" class="navbar-brand">Catalysto</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
@@ -28,15 +28,22 @@
                   <li class="nav-item head-nav">
                       <a href="" class="nav-link"  data-bs-toggle="modal" data-bs-target="#exampleModal3">Contact</a>
                   </li>
-                  <li class="nav-item">
-                      <button class="nav-link border-light bg-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <li class="nav-item dropdown">
+                      <button class="nav-link border-light bg-none dropdown-toggle" type="button" data-bs-toggle="dropdown" role="button" aria-expanded="false">
                           Repository
                         </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Pomodoro</a></li>
+                          <li><a class="dropdown-item" href="#">Secret Number</a></li>
+                          <li><a class="dropdown-item" href="#">Calculator</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item nav-link disabled p-2" aria-disabled="true">Coming Soon</a></li>
+                        </ul>
                   </li>                       
                 </ul>
                 <form action="" class="d-flex ms-auto p-2">
                     <input type="search" placeholder="Search" class="form-control shadow-lg">
-                    <button type="button" class="btn btn-outline-dark success ms-1 border-dark-subtle bg-dark text-light">Search</button>
+                    <button type="button" class="btn btn-outline-light success ms-1 border-dark-subtle bg-dark text-light">Search</button>
                 </form>
             </div>
             </div>
@@ -120,9 +127,33 @@
     </div>
 
 
-    <main>
-        <!-- <h1 class="display-2">My portfolio site</h1>
-        <p class="h4">Welcome to my programmer portfolio site! Here, you will find a collection of my projects and accomplishments in the world of programming.From developing innovative web applications to designing intuitive user interfaces</p> -->
+    <main class="d-block">
+      <div class="carousel slide" id="carouselControls" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>      
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="6000">
+            <img src="./background-1.png" alt="Responsive image" class="d-block w-100" style="object-fit: cover; height: 100vh;">
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <img src="./background-2.png" alt="Responsive image" class="d-block w-100" style="object-fit: cover; height: 100vh;">
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <img src="./background-3.png" alt="Responsive image" class="d-block w-100" style="object-fit: cover; height: 100vh;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </main>
 
     <footer>
