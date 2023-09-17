@@ -71,3 +71,15 @@ body, html{
     }
 }
 
+@media (width > 1500px) and (height > 900px){
+    header{
+        font-size: 23px;
+    }
+    footer{
+        font-size: 19px;
+    }
+    .navbar-brand{
+        font-weight: 500;
+    }
+}
+
