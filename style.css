@@ -4,7 +4,6 @@
  }
 
 body, html{
-    background-image: url("./background.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -82,5 +81,3 @@ body, html{
         font-weight: 500;
     }
 }
-
-
